@@ -3,7 +3,7 @@
 Official PyTorch Implementation
 
 <p align="center">
-  <img src="res/faces.jpeg"/>
+  <img src="assets/faces.jpeg"/>
 </p>
 
 For more details, please refer to the [paper](https://arxiv.org/abs/2104.04767).
@@ -23,7 +23,7 @@ python train.py --cfg configs/mobile_stylegan_ffhq.json --gpus <n_gpus>
 ## Generate images using MobileStyleGAN
 
 ```bash
-python generate.py --cfg configs/mobile_stylegan_ffhq.json --ckpt <path_to_ckpt> --output-path <path_to_store_imgs> --batch-size <batch_size> --n-batches <n_batches>
+python inference.py --cfg configs/mobile_stylegan_ffhq.json --ckpt <path_to_ckpt> --output-path <path_to_store_imgs> --batch-size <batch_size> --n-output <n_output>
 ```
 
 ## Pretrained models
